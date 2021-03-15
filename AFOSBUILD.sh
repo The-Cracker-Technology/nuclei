@@ -9,10 +9,4 @@ strip nuclei
 cp -Rf nuclei /opt/ANDRAX/nuclei/nuclei
 chmod 755 /opt/ANDRAX/nuclei/nuclei
 
-WORKDIR=$(pwd)
-
-cd /opt/ANDRAX/nuclei
-
-nuclei -update-templates
-
-cd $WORKDIR
+nuclei -version
